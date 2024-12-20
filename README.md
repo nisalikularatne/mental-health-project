@@ -2,12 +2,15 @@
 ---
 
 ## Content
-- [Overview](#overview)
-- [Solution Architecture](#solution-architecture)
-- [Agent Architecture](#agent-architecture)
-- [Deployment Guide](#deployment-guide)
-- [Testing and Validation](#testing-and-validation)
-- [Clean Up](#clean-up)
+- [Build generative AI agents with Amazon Bedrock, Amazon DynamoDB, Amazon Kendra, Amazon Lex, and LangChain](#build-generative-ai-agents-with-amazon-bedrock-amazon-dynamodb-amazon-kendra-amazon-lex-and-langchain)
+  - [Content](#content)
+  - [Overview](#overview)
+    - [Demo Recording](#demo-recording)
+  - [Solution Architecture](#solution-architecture)
+  - [Agent Architecture](#agent-architecture)
+  - [Deployment Guide](#deployment-guide)
+  - [Testing and Validation](#testing-and-validation)
+  - [Clean Up](#clean-up)
 
 ## Overview
 Generative AI agents are capable of producing human-like responses and engaging in natural language conversations by orchestrating a chain of calls to foundation models (FMs) and other augmenting tools based on user input. Instead of only fulfilling pre-defined intents through a static decision tree, agents are autonomous within the context of their suite of available tools. [Amazon Bedrock](https://aws.amazon.com/bedrock/) is a fully managed service that makes leading foundation models from AI companies available through an API along with developer tooling to help build and scale generative AI applications.
