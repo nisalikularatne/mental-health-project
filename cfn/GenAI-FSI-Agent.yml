@@ -455,7 +455,6 @@ Resources:
             - agent/assets/
           ExclusionPatterns:
             - "*.tmp"
-          AccessControlListConfiguration: ~
           DocumentsMetadataConfiguration:
             S3Prefix: metadata/
       Description: "S3 bucket data source for Kendra"

@@ -1,5 +1,5 @@
 # Generate a unique identifier for the bucket
-export UNIQUE_IDENTIFIER=$(head /dev/urandom | tr -dc a-z0-9 | head -c 5)
+export UNIQUE_IDENTIFIER=$(head /dev/urandom | LC_ALL=C tr -dc a-z0-9 | head -c 5)
 export S3_ARTIFACT_BUCKET_NAME="${STACK_NAME//[^a-z0-9-]/}-${UNIQUE_IDENTIFIER}"
 export DATA_LOADER_S3_KEY="agent/lambda/data-loader/loader_deployment_package.zip"
 export LAMBDA_HANDLER_S3_KEY="agent/lambda/agent-handler/agent_deployment_package.zip"
